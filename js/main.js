@@ -26,12 +26,8 @@ fetch("./html/footer.html")
     index = true;
   }
 
-
-    var elem = document.getElementsByClassName("return");
-    console.log(elem.classList);
-
-
-
+  let ecoute
+  console.log(window.document.querySelector('.return').classList);
 
 
   console.log(index)
