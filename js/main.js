@@ -27,7 +27,7 @@ fetch("./html/footer.html")
   }
 
   let ecoute
-  console.log(window.document.querySelector('.return').classList);
+  console.log(window.document.querySelector('.return'));
 
 
   console.log(index)
