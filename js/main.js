@@ -1,33 +1,18 @@
-// GESTION DES INCLUDES
+window.addEventListener('DOMContentLoaded', (event) => {
+  loadPage('home')
+});
 
-fetch("./html/header.html")
+function loadPage(pageName){
+  fetch(`./html/${pageName}.html`)
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("header").innerHTML = data;
+    document.querySelector("main").innerHTML = data.toString();
+
+    document.querySelector('.return').style.display = 'block';
+    if(pageName === "home"){
+      document.querySelector('.return').style.display = 'none';
+    }
   });
-
-fetch("./html/footer.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("footer").innerHTML = data;
-  });
-
-  // GESTION CONDITION HEADER
-
-  let index =false;
-  let path = window.location.pathname;
-  let page = path.split("/").pop();
-  
-  if (page == "index.html") {
-    index = true;
-  }
-
-  let ecoute
-  console.log(window.document.querySelector('.return'));
-
-
-  console.log(index)
+}
