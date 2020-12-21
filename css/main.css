@@ -229,6 +229,10 @@ main {
           align-items: center;
 }
 
+.cardResto a .bottomCart .description h3 {
+  margin-bottom: 0.2rem;
+}
+
 .cardResto a .bottomCart .description .district {
   margin-top: 0;
 }
