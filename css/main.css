@@ -1,0 +1,215 @@
+/*COLOR*/
+/*FONTS*/
+body {
+  background-color: #dfdfdf;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.23);
+          box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.23);
+  height: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header .logoContent {
+  margin: auto;
+}
+
+.header .logoContent img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 6.3rem;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 2rem;
+}
+
+.localisation {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.localisation i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.hero {
+  background: #e7e8e9;
+  background: -webkit-gradient(linear, left bottom, left top, from(#e7e8e9), to(white));
+  background: linear-gradient(0deg, #e7e8e9 0%, white 100%);
+  text-align: center;
+}
+
+.hero .container p {
+  font-weight: 100;
+}
+
+.hero .container .buttonGradient {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 50px;
+  border-style: none;
+  -webkit-box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
+          box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
+  background: #9356dc;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+
+.hero .container .buttonGradient p {
+  color: white;
+  font-weight: 400;
+  padding: 0 1rem;
+}
+
+.fonction {
+  background-color: #f0f0f0;
+  padding-bottom: 4rem;
+}
+
+.fonction .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fonction .container .buttonWhite {
+  position: relative;
+  height: 7rem;
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 50px;
+  border-style: none;
+  -webkit-box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
+          box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
+}
+
+.fonction .container .buttonWhite .number {
+  position: absolute;
+  left: -0.7rem;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  background-color: #9356dc;
+  border-radius: 50%;
+}
+
+.fonction .container .buttonWhite .center {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fonction .container .buttonWhite .center i {
+  margin-right: 2rem;
+  font-size: 1.8rem;
+  opacity: 0.6;
+}
+
+.cardResto {
+  position: relative;
+  border-radius: 25px;
+  height: 30vh;
+  margin: 2rem 0;
+}
+
+.cardResto a {
+  text-decoration: none;
+}
+
+.cardResto a .imgContent {
+  overflow: hidden;
+}
+
+.cardResto a .imgContent img {
+  height: 16rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cardResto a .newPop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem 1rem 0 0;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+  background-color: #99e2d0;
+  color: rgba(3, 29, 0, 0.584);
+}
+
+.cardResto a .newPop[data-active="false"] {
+  display: none;
+}
+
+.cardResto a .newPop p {
+  margin: 0;
+  font-weight: 800;
+}
+
+.cardResto a .bottomCart {
+  background-color: white;
+}
+/*# sourceMappingURL=main.css.map */
