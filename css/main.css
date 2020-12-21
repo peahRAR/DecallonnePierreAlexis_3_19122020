@@ -179,10 +179,6 @@ main {
   text-decoration: none;
 }
 
-.cardResto a .imgContent {
-  overflow: hidden;
-}
-
 .cardResto a .imgContent img {
   height: 16rem;
   width: 100%;
@@ -229,11 +225,34 @@ main {
           align-items: center;
 }
 
+.cardResto a .bottomCart .like {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.cardResto a .bottomCart .like .heart:before {
+  content: "\f084a";
+  color: black;
+}
+
+.cardResto a .bottomCart .like .heart:hover:before {
+  content: "\f004";
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardResto a .bottomCart .description {
+  margin-left: 1rem;
+}
+
 .cardResto a .bottomCart .description h3 {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.6rem;
 }
 
 .cardResto a .bottomCart .description .district {
+  font-weight: 100;
   margin-top: 0;
 }
 
