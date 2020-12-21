@@ -49,6 +49,7 @@ main {
 .container {
   max-width: 1440px;
   padding: 2rem;
+  margin: 0 auto;
 }
 
 .localisation {
@@ -211,5 +212,33 @@ main {
 
 .cardResto a .bottomCart {
   background-color: white;
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 0 1rem;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardResto a .bottomCart .description .district {
+  margin-top: 0;
+}
+
+.footer {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.footer .footerContent svg path {
+  fill: white;
 }
 /*# sourceMappingURL=main.css.map */

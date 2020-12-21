@@ -41,6 +41,7 @@ main {
 .container {
     max-width: 1440px;
     padding: 2rem;
+    margin: 0 auto;
 }
 
 .localisation {
@@ -156,7 +157,32 @@ main {
         }
         .bottomCart{
             background-color: white;
+            position: absolute;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            padding: 0 1rem;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .description{
+                .district{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
 
+.footer{
+    background-color: rgb(45, 45, 45);
+    color: white;
+    .footerContent{
+        svg{
+            path{
+            fill: white;
+            }
         }
     }
 }
