@@ -187,13 +187,9 @@ main {
                 font-size: 2rem;
                 margin-right: 2rem;
                 .heart{
-                    &:before {
-                        content: "\f084a";
-                        color: black;
-                      }
                       &:hover {
                         &:before {
-                          content: "\f004";
+                          font-weight: 900;
                           background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
                           -webkit-background-clip: text;
                           -webkit-text-fill-color: transparent;
