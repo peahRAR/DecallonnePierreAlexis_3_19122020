@@ -14,7 +14,7 @@ body {
 
 /*RESET BUTTON FOCUS*/
 
-button:focus{
+button:focus {
     outline: none;
 }
 
@@ -83,6 +83,10 @@ main {
             box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
             background: rgb(147, 86, 220);
             background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+            &:hover{
+            background: linear-gradient(0deg, rgb(169, 113, 228) 0%, rgb(250, 138, 211) 1);
+            box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
+            }
             p {
                 color: white;
                 font-weight: 400;
@@ -144,13 +148,17 @@ main {
     height: 30vh;
     margin: 2rem 0;
     box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
+    &:hover{
+        opacity: 0.87;
+        box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
+    }
     a {
         text-decoration: none;
         .imgContent {
             img {
                 height: 16rem;
                 width: 100%;
-                object-fit:cover;
+                object-fit: cover;
                 border-radius: 25px 25px 0 0;
             }
         }
@@ -186,31 +194,28 @@ main {
             .like {
                 font-size: 2rem;
                 margin-right: 2rem;
-                .heart{
-                      &:hover {
-                        &:before {
-                          font-weight: 900;
-                          background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
-                          -webkit-background-clip: text;
-                          -webkit-text-fill-color: transparent;
-                        }
-                      }  
-                }
-            }
-            .description {
-                margin-left: 1rem;
-                h3 {
-                    margin-bottom: 0.6rem;
-                    
-                }
-                .district {
-                    font-weight: 100;
-                    margin-top: 0;
+                .heart {
+                    &:hover {
+                        animation: sizeHeart 250ms linear;
+                        font-weight: 900;
+                        background: linear-gradient(180deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
                 }
             }
         }
+        .description {
+            margin-left: 1rem;
+            h3 {
+                margin-bottom: 0.6rem;
+            }
+            .district {
+                font-weight: 100;
+                margin-top: 0;
+            }
+        }
     }
-
 }
 
 /*FOOTER*/
@@ -225,18 +230,20 @@ main {
                 fill: white;
             }
         }
-        .footerLine{
+        .footerLine {
             margin: 0.8rem 1rem 0.8rem 0;
-            i{
+            i {
                 margin-right: 1rem;
             }
-            a{
+            a {
                 text-decoration: none;
                 color: white;
-                &:hover{
+                &:hover {
                     border-bottom: 0.1rem solid white;
                 }
             }
         }
     }
 }
+
+

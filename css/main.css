@@ -102,6 +102,13 @@ main {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
 
+.hero .container .buttonGradient:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#a971e4), color-stop(1, #fa8ad3));
+  background: linear-gradient(0deg, #a971e4 0%, #fa8ad3 1);
+  -webkit-box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
+          box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
+}
+
 .hero .container .buttonGradient p {
   color: white;
   font-weight: 400;
@@ -187,6 +194,12 @@ main {
           box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
 }
 
+.cardResto:hover {
+  opacity: 0.87;
+  -webkit-box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
+          box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
+}
+
 .cardResto a {
   text-decoration: none;
 }
@@ -244,23 +257,25 @@ main {
   margin-right: 2rem;
 }
 
-.cardResto a .bottomCart .like .heart:hover:before {
+.cardResto a .bottomCart .like .heart:hover {
+  -webkit-animation: sizeHeart 250ms linear;
+          animation: sizeHeart 250ms linear;
   font-weight: 900;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356dc), to(#ff79da));
-  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(180deg, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.cardResto a .bottomCart .description {
+.cardResto a .description {
   margin-left: 1rem;
 }
 
-.cardResto a .bottomCart .description h3 {
+.cardResto a .description h3 {
   margin-bottom: 0.6rem;
 }
 
-.cardResto a .bottomCart .description .district {
+.cardResto a .description .district {
   font-weight: 100;
   margin-top: 0;
 }
