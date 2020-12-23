@@ -18,9 +18,9 @@
 <body>
 
   <header class="header">
-    <div class="return" data-active="false">
+    <!--<div class="return" data-active="false">
       <i class="fas fa-arrow-left"></i>
-    </div>
+    </div>-->
     <div class="logoContent">
       <img src="./img/logo/ohmyfood.svg" alt="logo ohmyfood">
     </div>
@@ -28,7 +28,136 @@
   </header>
 
   <main>
-    <!-- LAISSER VIDE CONTENU DYNAMIQUE -->
+    <!-- LAISSER VIDE CONTENU DYNAMIQUE SI UTILISATION DU MAIN JS -->
+    <section class="localisation">
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Paris, Belleville</p>
+  </section>
+  <section class="hero">
+      <div class="container">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+          <button class="buttonGradient">
+              <p>Explorer nos restaurants</p>
+          </button>
+      </div>
+  </section>
+  
+  <section class="fonction">
+      <div class="container">
+          <h2>Fonctionnement</h2>
+          <button class="buttonWhite">
+              <p class="number">1</p>
+              <div class="center">
+                  <i class="fas fa-mobile-alt"></i>
+                  <p class="buttonTitle">Choisissez un restaurant</p>
+              </div>
+          </button>
+          <button class="buttonWhite">
+              <p class="number">2</p>
+              <div class="center">
+                  <i class="fas fa-list-ul"></i>
+                  <p class="buttonTitle">Composez votre menu</p>
+              </div>
+          </button>
+          <button class="buttonWhite">
+              <p class="number">3</p>
+              <div class="center">
+                  <i class="fas fa-store"></i>
+                  <p class="buttonTitle">Dégustez au restaurant</p>
+              </div>
+          </button>
+      </div>
+  </section>
+  
+  <section class="restaurants">
+      <div class="container">
+          <h2>Restaurants</h2>
+          <div class="cardResto">
+              <a href="">
+                  <div class="imgContent">
+                      <img src="./img/restaurants/lapalettedugout.jpg" alt="Asiette de salade avec filet de vinaigrette">
+                  </div>
+                  <div class="newPop" data-active="true">
+                      <p>Nouveau</p>
+                  </div>
+                  <div class="bottomCart">
+                      <div class="description">
+                          <h3>La palette du goût</h3>
+                          <p class="district">Ménilmontant</p>
+                      </div>
+                      <div class="like">
+                          <i class="far fa-heart heart"></i>
+                      </div>
+                  </div>
+              </a>
+          </div>
+  
+          <div class="cardResto">
+              <a href="">
+                  <div class="imgContent">
+                      <img src="./img/restaurants/lanoteenchantee.jpg" alt="Asiette copieuse aux saveurs orientales">
+                  </div>
+                  <div class="newPop" data-active="true">
+                      <p>Nouveau</p>
+                  </div>
+                  <div class="bottomCart">
+                      <div class="description">
+                          <h3>La note enchantée</h3>
+                          <p class="district">Charonne</p>
+                      </div>
+                      <div class="like">
+                          <i class="far fa-heart heart"></i>
+                      </div>
+                  </div>
+              </a>
+          </div>
+  
+          <div class="cardResto">
+              <a href="">
+                  <div class="imgContent">
+                      <img src="./img/restaurants/alafrancaise.jpg" alt="Asiette avec une salade sur du pain toasté ">
+                  </div>
+                  <div class="newPop" data-active="false">
+                      <p>Nouveau</p>
+                  </div>
+                  <div class="bottomCart">
+                      <div class="description">
+                          <h3>À la française</h3>
+                          <p class="district">
+                              Cité Rouge
+                          </p>
+                      </div>
+                      <div class="like">
+                          <i class="far fa-heart heart"></i>
+                      </div>
+                  </div>
+              </a>
+          </div>
+  
+          <div class="cardResto">
+              <a href="">
+                  <div class="imgContent">
+                      <img src="./img/restaurants/ledelicedessens.jpg" alt="Asiette de poisson grillé">
+                  </div>
+                  <div class="newPop" data-active="false">
+                      <p>Nouveau</p>
+                  </div>
+                  <div class="bottomCart">
+                      <div class="description">
+                          <h3>Le délice des sens</h3>
+                          <p class="district">
+                              Folie-Méricourt
+                          </p>
+                      </div>
+                      <div class="like">
+                          <i class="far fa-heart heart"></i>
+                      </div>
+                  </div>
+              </a>
+          </div>
+      </div>
+  </section>
   </main>
 
   <footer class="footer">
@@ -61,7 +190,7 @@
 
   </footer>
 
-  <script type="text/javascript" src="./js/main.js">
+  <!-- <script type="text/javascript" src="./js/main.js"> -->
   </script>
 </body>
 
