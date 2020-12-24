@@ -160,6 +160,7 @@ main {
 /*CHOIX RESTO*/
 
 .cardResto {
+    overflow: hidden;
     position: relative;
     border-radius: 25px;
     height: 30vh;
@@ -173,7 +174,6 @@ main {
         text-decoration: none;
         .imgContent {
             img {
-                height: 13rem;
                 width: 100%;
                 object-fit: cover;
                 border-radius: 25px 25px 0 0;
