@@ -6,6 +6,11 @@ body {
   font-size: 1.3rem;
 }
 
+.pageResto h1 {
+  font-family: "Shrikhand", cursive;
+  letter-spacing: 0.2rem;
+}
+
 /*RESET BUTTON FOCUS*/
 button:focus {
   outline: none;
@@ -31,11 +36,30 @@ button:focus {
           flex-direction: row;
 }
 
-.header .logoContent {
+.header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .container .return {
+  margin-right: 4rem;
+  font-size: 2rem;
+}
+
+.header .container .return a {
+  text-decoration: none;
+  color: black;
+}
+
+.header .container .logoContent {
   margin: auto;
 }
 
-.header .logoContent img {
+.header .container .logoContent img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -205,11 +229,12 @@ main {
 }
 
 .cardResto a .imgContent img {
-  height: 16rem;
+  height: 13rem;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 25px 25px 0 0;
+  background-color: white;
 }
 
 .cardResto a .newPop {
@@ -250,21 +275,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 0 0 25px 25px;
-}
-
-.cardResto a .bottomCart .like {
-  font-size: 2rem;
-  margin-right: 2rem;
-}
-
-.cardResto a .bottomCart .like .heart:hover {
-  -webkit-animation: sizeHeart 250ms linear;
-          animation: sizeHeart 250ms linear;
-  font-weight: 900;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
-  background: linear-gradient(180deg, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .cardResto a .description {
@@ -309,5 +319,164 @@ main {
 
 .footer .footerContent .footerLine a:hover {
   border-bottom: 0.1rem solid white;
+}
+
+/*PAGE RESTAURANT*/
+.pageResto {
+  padding: 0;
+}
+
+.pageResto .nameHeader {
+  position: relative;
+}
+
+.pageResto .nameHeader img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pageResto .nameHeader .borderRound {
+  width: 100%;
+  height: 2rem;
+  background-color: #dfdfdf;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-top-left-radius: 80px 80px;
+  border-top-right-radius: 80px 80px;
+}
+
+.pageResto .nameResto .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pageResto .nameResto .container .like {
+  font-size: 3rem;
+}
+
+.pageResto h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.pageResto h2 {
+  font-weight: 100;
+  margin-bottom: 1rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+}
+
+.pageResto .entree h2 {
+  margin-top: 0;
+}
+
+.pageResto hr {
+  width: 4rem;
+  margin: 0;
+  margin-bottom: 3rem;
+  border: 0.2rem solid #99e2d0;
+  background-color: #99e2d0;
+}
+
+.pageResto .plat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  margin: 1.5rem 0;
+  padding: 0 0 0 1.5rem;
+  border-radius: 25px;
+  height: 6.5rem;
+}
+
+.pageResto .plat .platInfo {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pageResto .plat .platInfo .nomPlat {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.pageResto .plat .platInfo .nomPlat p {
+  margin-bottom: 0;
+}
+
+.pageResto .plat .platInfo .ingredient p {
+  margin-top: 0.5rem;
+  font-weight: 100;
+}
+
+.pageResto .plat .prix {
+  height: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-right: 2rem;
+}
+
+.pageResto .plat .addCart {
+  height: 6.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #99e2d0;
+  padding: 0 2rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: none;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 5s;
+  transition: all 5s;
+}
+
+.pageResto .plat .addCart i {
+  color: white;
+  font-size: 2.3rem;
+}
+
+.pageResto .plat:hover .addCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.pageResto .plat:hover .addCart i {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 /*# sourceMappingURL=main.css.map */
