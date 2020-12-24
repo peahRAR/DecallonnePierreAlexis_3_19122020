@@ -34,4 +34,58 @@
     opacity: 1;
   }
 }
+
+.menu {
+  opacity: 0;
+  margin-top: 10%;
+  -webkit-animation: fadeIn 2200ms ease-in both;
+          animation: fadeIn 2200ms ease-in both;
+  animation-direction: reverse;
+}
+
+.menu .plat:nth-child(2) {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.menu .plat:nth-child(3) {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.menu .plat:nth-child(4) {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+
+.menu .plat:nth-child(5) {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
 /*# sourceMappingURL=animation.css.map */
