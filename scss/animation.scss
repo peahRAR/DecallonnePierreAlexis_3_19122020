@@ -1,0 +1,30 @@
+//KEYFRAME ANIMATION
+
+//ANIMATION + DESIGN COEUR
+
+.like {
+    font-size: 2rem;
+    margin-right: 2rem;
+    .heart {
+        &:hover {
+            animation: sizeHeart 250ms linear;
+            font-weight: 900;
+            background: linear-gradient(180deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
+
+@keyframes sizeHeart {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}

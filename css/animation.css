@@ -1,0 +1,37 @@
+.like {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.like .heart:hover {
+  -webkit-animation: sizeHeart 250ms linear;
+          animation: sizeHeart 250ms linear;
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background: linear-gradient(180deg, #9356dc 0%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes sizeHeart {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes sizeHeart {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=animation.css.map */
