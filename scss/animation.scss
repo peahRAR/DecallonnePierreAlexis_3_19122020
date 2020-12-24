@@ -14,7 +14,6 @@
     }
 }
 
-
 @keyframes sizeHeart {
     from {
         width: 0%;
@@ -29,38 +28,58 @@
 
 //ANIMATION APPARITION DES PLATS
 
-.menu{
+.menu {
     opacity: 0;
     margin-top: 10%;
-    animation: fadeIn 2200ms ease-in both;
+    animation: apparition 2s ease-in both;
     animation-direction: reverse;
-    .plat{
-    &:nth-child(2) {
-        animation-delay: 300ms;
-      }
-  
-      &:nth-child(3) {
-        animation-delay: 400ms;
-      }
-  
-      &:nth-child(4) {
-        animation-delay: 500ms;
-      }
-  
-      &:nth-child(5) {
-        animation-delay: 600ms;
-      }
+    .plat {
+        &:nth-child(2) {
+            animation-delay: 300ms;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        &:nth-child(3) {
+            animation-delay: 400ms;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        &:nth-child(4) {
+            animation-delay: 500ms;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        &:nth-child(5) {
+            animation-delay: 600ms;
+            animation: fadeIn 1s ease-in-out;
+        }
+    }
+}
+
+@for $i from 0 through 10 {
+    .menu.plat:nth-child(#{$i}) {
+        animation: fadeIn 1s ease-in-out;
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity: 1;
+        transform: translate3d(0, -10%, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
     }
 }
 
 @keyframes fadeIn {
     from {
-      opacity: 1;
-      transform: translate3d(0, -10%, 0);
+        opacity: 0;
     }
-  
+
     to {
-      opacity: 0;
-      transform: translate3d(0, 0, 0);
+        opacity: 1;
     }
-  }
+}
