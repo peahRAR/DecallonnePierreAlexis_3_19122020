@@ -332,6 +332,7 @@ main {
 
 .pageResto .nameHeader img {
   width: 100%;
+  max-height: 35vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
