@@ -408,10 +408,10 @@ main {
           box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
 }
 
-.pageResto .plat .platInfo {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.pageResto .plat .prixAndAdd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .pageResto .plat .platInfo .nomPlat {
@@ -426,6 +426,8 @@ main {
 .pageResto .plat .platInfo .ingredient p {
   margin-top: 0.5rem;
   font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pageResto .plat .prix {

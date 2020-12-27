@@ -29,16 +29,19 @@
 //ANIMATION APPARITION DES PLATS
 
 .menu {
-    opacity: 0;
-    margin-top: 10%;
-    animation: apparition 1s ease-in both;
-    animation-direction: reverse;
+    opacity: 1;
+    .plat{
+        animation-name: fadeIn;
+        animation-timing-function	:  ease-in-out;
+    }
 }
 
 // Boucle pour l'animation
 @for $i from 0 through 10 {
     .menu .plat:nth-child(#{$i}) {
-        animation-delay: 150ms*$i;
+        animation: apparition 2s ease-in both;
+        animation-direction: reverse;
+        animation-delay: 250ms*$i;
     }
 }
 
