@@ -421,10 +421,14 @@ main {
 
 .pageResto .plat .platInfo .nomPlat p {
   margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .pageResto .plat .platInfo .ingredient p {
   margin-top: 0.5rem;
+  margin-bottom: 0;
   font-weight: 100;
   overflow: hidden;
   text-overflow: ellipsis;

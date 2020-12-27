@@ -332,14 +332,18 @@ main {
                 font-size: 1.5rem;
                 p {
                     margin-bottom: 0;
+                    margin-top: 0;
+                    overflow: hidden;      
+                    text-overflow: ellipsis;
                 }
             }
             .ingredient {
                 p {
                     margin-top: 0.5rem;
+                    margin-bottom: 0;
                     font-weight: 100;   
                     overflow: hidden;      
-                    text-overflow: ellipsis; 
+                    text-overflow: ellipsis;
                 }
             }
         }
