@@ -38,7 +38,6 @@
 // Boucle pour l'animation
 @for $i from 0 through 10 {
     .menu .plat:nth-child(#{$i}) {
-        animation: fadeIn 1s ease-in-out;
         animation-delay: 150ms*$i;
     }
 }
