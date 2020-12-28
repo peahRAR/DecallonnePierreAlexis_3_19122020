@@ -80,6 +80,12 @@ main {
         font-size: 1.5rem;
         margin-right: 1rem;
     }
+    h6{
+        font-size: 1.5rem;
+        margin: 1rem;
+        font-weight: 100;
+        font-family: "Roboto", sans-serif;
+    }
 }
 
 /*HERO*/
@@ -135,6 +141,8 @@ main {
             box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
             .number {
                 position: absolute;
+                display: flex;
+                justify-content: center;
                 left: -0.7rem;
                 color: white;
                 width: 2rem;

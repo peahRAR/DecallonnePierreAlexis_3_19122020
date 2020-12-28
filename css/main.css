@@ -102,6 +102,13 @@ main {
   margin-right: 1rem;
 }
 
+.localisation h6 {
+  font-size: 1.5rem;
+  margin: 1rem;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+
 /*HERO*/
 .hero {
   background: #e7e8e9;
@@ -180,6 +187,12 @@ main {
 
 .fonction .container .buttonWhite .number {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: -0.7rem;
   color: white;
   width: 2rem;
