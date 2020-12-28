@@ -80,7 +80,7 @@ main {
         font-size: 1.5rem;
         margin-right: 1rem;
     }
-    h6{
+    h6 {
         font-size: 1.5rem;
         margin: 1rem;
         font-weight: 100;
@@ -112,10 +112,12 @@ main {
             background: linear-gradient(0deg, rgb(169, 113, 228) 0%, rgb(250, 138, 211) 100%);
             box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
         }
-        p {
+        span {
             color: white;
             font-weight: 400;
             padding: 0 1rem;
+            display: block;
+            margin: 1rem 0;
         }
     }
 }
@@ -261,11 +263,11 @@ main {
     }
 }
 
-.center{
+.center {
     display: flex;
 }
 
-.commandButton{
+.commandButton {
     margin: 1rem 2.5rem;
 }
 
