@@ -355,6 +355,7 @@ main {
                     margin-top: 0;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                    font-weight: 800;
                 }
             }
             .ingredient {
@@ -372,6 +373,9 @@ main {
             display: flex;
             flex-direction: column-reverse;
             margin-right: 2rem;
+            p{
+                font-weight: 800;
+            }
         }
         .addCart {
             float: right;
