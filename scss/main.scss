@@ -89,6 +89,7 @@ main {
     background: linear-gradient(0deg, rgba(231, 232, 233, 1) 0%, rgba(255, 255, 255, 1) 100%);
     text-align: center;
 }
+
 .container {
     p {
         font-weight: 100;
@@ -102,7 +103,7 @@ main {
         background: rgb(147, 86, 220);
         background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
         &:hover {
-            background: linear-gradient(0deg, rgb(169, 113, 228) 0%, rgb(250, 138, 211) 1);
+            background: linear-gradient(0deg, rgb(169, 113, 228) 0%, rgb(250, 138, 211) 100%);
             box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
         }
         p {

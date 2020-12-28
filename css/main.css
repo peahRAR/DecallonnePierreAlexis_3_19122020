@@ -127,8 +127,8 @@ main {
 }
 
 .container .buttonGradient:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(#a971e4), color-stop(1, #fa8ad3));
-  background: linear-gradient(0deg, #a971e4 0%, #fa8ad3 1);
+  background: -webkit-gradient(linear, left bottom, left top, from(#a971e4), to(#fa8ad3));
+  background: linear-gradient(0deg, #a971e4 0%, #fa8ad3 100%);
   -webkit-box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
           box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
 }
