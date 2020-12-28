@@ -157,11 +157,16 @@ main {
                 width: 100%;
                 display: flex;
                 align-items: center;
-                justify-content: center;
+                justify-content: flex-start;
+                padding-left: 4rem;
                 i {
                     margin-right: 2rem;
                     font-size: 1.8rem;
                     opacity: 0.6;
+                }
+                p{
+                    margin: auto;
+                    font-weight: 400;
                 }
             }
         }
