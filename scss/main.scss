@@ -88,27 +88,27 @@ main {
     background: rgb(231, 232, 233);
     background: linear-gradient(0deg, rgba(231, 232, 233, 1) 0%, rgba(255, 255, 255, 1) 100%);
     text-align: center;
-    .container {
-        p {
-            font-weight: 100;
+}
+.container {
+    p {
+        font-weight: 100;
+    }
+    .buttonGradient {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 50px;
+        border-style: none;
+        box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
+        background: rgb(147, 86, 220);
+        background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
+        &:hover {
+            background: linear-gradient(0deg, rgb(169, 113, 228) 0%, rgb(250, 138, 211) 1);
+            box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
         }
-        .buttonGradient {
-            margin-top: 1rem;
-            margin-bottom: 2rem;
-            border-radius: 50px;
-            border-style: none;
-            box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
-            background: rgb(147, 86, 220);
-            background: linear-gradient(0deg, rgba(147, 86, 220, 1) 0%, rgba(255, 121, 218, 1) 100%);
-            &:hover {
-                background: linear-gradient(0deg, rgb(169, 113, 228) 0%, rgb(250, 138, 211) 1);
-                box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
-            }
-            p {
-                color: white;
-                font-weight: 400;
-                padding: 0 1rem;
-            }
+        p {
+            color: white;
+            font-weight: 400;
+            padding: 0 1rem;
         }
     }
 }
@@ -252,6 +252,14 @@ main {
     }
 }
 
+.center{
+    display: flex;
+}
+
+.commandButton{
+    margin: 1rem 2.5rem;
+}
+
 /*PAGE RESTAURANT*/
 .pageResto {
     padding: 0;
@@ -279,7 +287,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            .like{
+            .like {
                 font-size: 3rem;
             }
         }
@@ -297,9 +305,9 @@ main {
         text-transform: uppercase;
     }
 
-    .entree{
-        h2{
-        margin-top: 0;
+    .entree {
+        h2 {
+            margin-top: 0;
         }
     }
 
@@ -311,8 +319,6 @@ main {
         background-color: $tertiary-color;
     }
 
-
-
     .plat {
         display: flex;
         align-items: center;
@@ -323,17 +329,20 @@ main {
         border-radius: 25px;
         height: 6.5rem;
         box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
-        .prixAndAdd{
+        .prixAndAdd {
             display: flex;
         }
         .platInfo {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
             .nomPlat {
                 font-weight: 800;
                 font-size: 1.5rem;
                 p {
                     margin-bottom: 0;
                     margin-top: 0;
-                    overflow: hidden;      
+                    overflow: hidden;
                     text-overflow: ellipsis;
                 }
             }
@@ -341,19 +350,21 @@ main {
                 p {
                     margin-top: 0.5rem;
                     margin-bottom: 0;
-                    font-weight: 100;   
-                    overflow: hidden;      
+                    font-weight: 100;
+                    overflow: hidden;
                     text-overflow: ellipsis;
                 }
             }
         }
-        .prix{
+        .prix {
             height: 6.5rem;
             display: flex;
-            flex-direction:column-reverse;
-            margin-right:2rem;
+            flex-direction: column-reverse;
+            margin-right: 2rem;
         }
-        .addCart{
+        .addCart {
+            float: right;
+            width: 0;
             height: 6.5rem;
             display: flex;
             flex-direction: column;
@@ -363,20 +374,18 @@ main {
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             display: none;
-            transform-origin: 100%;
-            transform: scaleX(0);
             transition: all 5s;
-            i{
+            .fas {
                 color: white;
                 font-size: 2.3rem;
-                
             }
         }
-        &:hover .addCart{
+        &:hover .addCart {
             display: flex;
-            transform: scaleX(1);
-            i{
-                transform: rotate(360deg);
+            width: 100%;
+            animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+            .fas {
+                animation: fa-spin 0.5s 1 linear;
             }
         }
     }

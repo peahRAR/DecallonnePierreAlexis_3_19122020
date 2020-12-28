@@ -110,11 +110,11 @@ main {
   text-align: center;
 }
 
-.hero .container p {
+.container p {
   font-weight: 100;
 }
 
-.hero .container .buttonGradient {
+.container .buttonGradient {
   margin-top: 1rem;
   margin-bottom: 2rem;
   border-radius: 50px;
@@ -126,14 +126,14 @@ main {
   background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
 }
 
-.hero .container .buttonGradient:hover {
+.container .buttonGradient:hover {
   background: -webkit-gradient(linear, left bottom, left top, from(#a971e4), color-stop(1, #fa8ad3));
   background: linear-gradient(0deg, #a971e4 0%, #fa8ad3 1);
   -webkit-box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
           box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.47);
 }
 
-.hero .container .buttonGradient p {
+.container .buttonGradient p {
   color: white;
   font-weight: 400;
   padding: 0 1rem;
@@ -321,6 +321,16 @@ main {
   border-bottom: 0.1rem solid white;
 }
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commandButton {
+  margin: 1rem 2.5rem;
+}
+
 /*PAGE RESTAURANT*/
 .pageResto {
   padding: 0;
@@ -414,6 +424,12 @@ main {
   display: flex;
 }
 
+.pageResto .plat .platInfo {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .pageResto .plat .platInfo .nomPlat {
   font-weight: 800;
   font-size: 1.5rem;
@@ -447,6 +463,8 @@ main {
 }
 
 .pageResto .plat .addCart {
+  float: right;
+  width: 0;
   height: 6.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,15 +481,11 @@ main {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
   display: none;
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
   -webkit-transition: all 5s;
   transition: all 5s;
 }
 
-.pageResto .plat .addCart i {
+.pageResto .plat .addCart .fas {
   color: white;
   font-size: 2.3rem;
 }
@@ -480,12 +494,13 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  width: 100%;
+  -webkit-animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: scale-up-hor-right 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 
-.pageResto .plat:hover .addCart i {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+.pageResto .plat:hover .addCart .fas {
+  -webkit-animation: fa-spin 0.5s 1 linear;
+          animation: fa-spin 0.5s 1 linear;
 }
 /*# sourceMappingURL=main.css.map */
