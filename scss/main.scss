@@ -7,7 +7,7 @@ $tertiary-color: #99e2d0;
 /*FONTS*/
 
 body {
-    background-color: rgb(223, 223, 223);
+    background-color: #F0F0F0;
     font-family: "Roboto", sans-serif;
     font-size: 1.3rem;
 }
@@ -183,6 +183,10 @@ main {
 
 /*CHOIX RESTO*/
 
+.restaurants{
+    background-color: #e4e3e3;
+}
+
 .cardResto {
     overflow: hidden;
     position: relative;
@@ -297,7 +301,7 @@ main {
         .borderRound {
             width: 100%;
             height: 2rem;
-            background-color: rgb(223, 223, 223);
+            background-color: #F0F0F0;
             position: absolute;
             bottom: 0;
             right: 0;
