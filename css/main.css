@@ -187,6 +187,15 @@ main {
           box-shadow: -1px 7px 22px -2px rgba(0, 0, 0, 0.27);
 }
 
+.fonction .container .buttonWhite:hover {
+  background-color: rgba(146, 86, 220, 0.146);
+}
+
+.fonction .container .buttonWhite:hover i {
+  color: #8c30fc;
+  opacity: 1;
+}
+
 .fonction .container .buttonWhite .number {
   position: absolute;
   display: -webkit-box;
