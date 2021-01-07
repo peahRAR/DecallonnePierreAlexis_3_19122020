@@ -1,0 +1,86 @@
+@media screen and (max-width: 376px) {
+  .pan-loader {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    margin: auto;
+    margin-top: 35vh;
+    margin-left: 35vw;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0.8rem;
+    margin: 0 auto;
+  }
+  .restaurants .container .cardResto .newPop {
+    padding: 0.2rem 0.4rem;
+  }
+  .restaurants .container .cardResto .newPop p {
+    font-size: 1rem;
+  }
+  .restaurants .container .cardResto a .bottomCart {
+    padding: 0 0.4rem;
+  }
+  .restaurants .container .cardResto a .bottomCart .description {
+    margin-left: 0.3rem;
+  }
+  .restaurants .container .cardResto a .bottomCart .description h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+  }
+  .restaurants .container .cardResto a .bottomCart .description .district {
+    margin-bottom: 0.6rem;
+    font-size: 1rem;
+  }
+  .restaurants .container .cardResto a .bottomCart .like {
+    margin-right: 0.2rem;
+    font-size: 1.5rem;
+  }
+  .header .container .return {
+    margin-right: 2rem;
+  }
+  .header .container .return a i {
+    font-size: 1.75rem;
+  }
+  .pageResto .nameHeader img {
+    margin-top: 4rem;
+  }
+  .pageResto .nameResto .container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .pageResto .nameResto .container h1 {
+    font-size: 1.8rem;
+  }
+  .pageResto .nameResto .container .like {
+    font-size: 1.8rem;
+    margin-right: 0;
+  }
+  .pageResto .corps .container {
+    padding-top: 0;
+  }
+  .pageResto .corps .container h2 {
+    margin-top: 4rem;
+  }
+  .pageResto .corps .container .menu .plat {
+    padding-left: 0.6rem;
+  }
+  .pageResto .corps .container .menu .plat .platInfo .nomPlat {
+    font-size: 1.2rem;
+  }
+  .pageResto .corps .container .menu .plat .platInfo .ingredient {
+    font-size: 0.99rem;
+  }
+  .pageResto .corps .container .menu .plat .platInfo .ingredient p {
+    margin: 0.3rem 0;
+  }
+  .pageResto .corps .container .menu .plat .prixAndAdd .prix {
+    margin-right: 0.6rem;
+    font-size: 0.9rem;
+    height: 100%;
+  }
+  .pageResto .corps .container .menu .plat .prixAndAdd .addCart {
+    display: none;
+  }
+}
+/*# sourceMappingURL=iphone8.css.map */

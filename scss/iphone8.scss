@@ -1,0 +1,123 @@
+@media screen and (max-width: 376px) {
+    .pan-loader {
+        transform: scale(1);
+        margin: auto;
+        margin-top: 35vh;
+        margin-left: 35vw;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0.8rem;
+        margin: 0 auto;
+    }
+
+
+
+
+    .restaurants {
+        .container {
+            .cardResto {
+                .newPop {
+                    padding: 0.2rem 0.4rem;
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+                a {
+                    .bottomCart {
+                        padding: 0 0.4rem;
+                        .description {
+                            margin-left: 0.3rem;
+                            h3 {
+                                margin-top: 0.5rem;
+                                margin-bottom: 0;
+                                font-size: 1.2rem;
+                            }
+                            .district {
+                                margin-bottom: 0.6rem;
+                                font-size: 1rem;
+                            }
+                        }
+                        .like {
+                            margin-right: 0.2rem;
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .header{
+        .container{
+            .return{
+                margin-right: 2rem;
+               a{
+                   i{
+                       font-size: 1.75rem;
+                   }
+               } 
+            }
+        }
+    }
+
+    .pageResto{
+        .nameHeader{
+            img{
+                margin-top: 4rem;
+            }
+        }
+       .nameResto{
+           .container{
+               padding-top: 0;
+               padding-bottom: 0;
+               h1{
+                font-size: 1.8rem;
+               }
+               .like{
+                   font-size: 1.8rem;
+                   margin-right: 0;
+               }
+           }
+       } 
+       .corps{
+           .container{
+               padding-top: 0;
+               h2{
+                   margin-top: 4rem;
+               }
+               .menu{
+                .plat{
+                    padding-left: 0.6rem;
+                    .platInfo{
+                        .nomPlat{
+                            font-size: 1.2rem;
+                        }
+                        .ingredient{
+                            font-size: 0.99rem;
+                            p{
+                                margin: 0.3rem 0;
+                            }
+                        }
+                    }
+                    .prixAndAdd{
+                        .prix{
+                            margin-right: 0.6rem;
+                            font-size: 0.9rem;
+                            height: 100%;
+
+                        }
+                        .addCart{
+                            display: none;
+                        }
+                    }
+                }
+               }
+           }
+       }
+    }
+
+}
+
+
